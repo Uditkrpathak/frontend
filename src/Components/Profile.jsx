@@ -2,9 +2,9 @@ import React from "react";
 
 const ProfileCard = () => {
   return (
-    <div className="max-w-2xl mx-4 sm:max-w-sm md:max-w-sm lg:max-w-sm xl:max-w-sm sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto mt-16 bg-purple-400 shadow-xl rounded-2xl text-white">
+    <div className="max-w-2xl mx-4 mt-16 text-white bg-purple-400 shadow-xl sm:max-w-sm md:max-w-sm lg:max-w-sm xl:max-w-sm sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto rounded-2xl">
       {/* Cover Image */}
-      <div className="rounded-t-lg h-32 overflow-hidden">
+      <div className="h-32 overflow-hidden rounded-t-lg">
         <img
           className="object-cover object-top w-full"
           src="https://i.pinimg.com/736x/ce/bc/f0/cebcf0b47749da763a274714eada34a1.jpg"
@@ -13,7 +13,7 @@ const ProfileCard = () => {
       </div>
 
       {/* Profile Picture */}
-      <div className="mx-auto w-32 h-32 relative -mt-16 border-4 border-white rounded-full overflow-hidden">
+      <div className="relative w-32 h-32 mx-auto -mt-16 overflow-hidden border-4 border-white rounded-full">
         <img
           className="object-cover object-center h-32"
           src="https://i.pinimg.com/736x/03/eb/d6/03ebd625cc0b9d636256ecc44c0ea324.jpg"
@@ -22,16 +22,16 @@ const ProfileCard = () => {
       </div>
 
       {/* User Details */}
-      <div className="text-center mt-2">
+      <div className="mt-2 text-center">
         <h2 className="font-semibold">Nikhil Sharma</h2>
         <p className="text-white">Student of Super60</p>
       </div>
 
       {/* Stats */}
-      <ul className="py-4 mt-2 text-gray-700 flex items-center justify-around">
+      <ul className="flex items-center justify-around py-4 mt-2 text-gray-700">
         <li className="flex flex-col items-center justify-around">
           <svg
-            className="w-4 fill-current text-white"
+            className="w-4 text-white fill-current"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
           >
@@ -41,7 +41,7 @@ const ProfileCard = () => {
         </li>
         <li className="flex flex-col items-center justify-between">
           <svg
-            className="w-4 fill-current text-white"
+            className="w-4 text-white fill-current"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
           >
@@ -51,7 +51,7 @@ const ProfileCard = () => {
         </li>
         <li className="flex flex-col items-center justify-around">
           <svg
-            className="w-4 fill-current text-white"
+            className="w-4 text-white fill-current"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
           >
@@ -62,8 +62,8 @@ const ProfileCard = () => {
       </ul>
 
       {/* Follow Button */}
-      <div className="p-4 border-t mx-8 mt-2">
-        <button className="w-1/2 block mx-auto rounded-full bg-purple-200 hover:shadow-lg font-semibold text-purple-500 px-6 py-2">
+      <div className="p-4 mx-8 mt-2 border-t">
+        <button className="block w-1/2 px-6 py-2 mx-auto font-semibold text-purple-500 bg-purple-200 rounded-full hover:shadow-lg">
           Back
         </button>
       </div>
